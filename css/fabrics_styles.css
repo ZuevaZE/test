@@ -245,11 +245,11 @@ input {
 /* Стили для экранов шириной 600px и меньше (мобильные устройства) */
 @media screen and (max-width: 600px) {
     .container {
-      max-width: 100%;
+      max-width: 60%;
     }
   
     .cards {
-      width: 60%;
+      width: 80%;
     }
   
     .cards label {
@@ -262,7 +262,7 @@ input {
   
     .card .image img,
     .card .image video {
-      width: 80%;
+      width: 100%;
       margin-top: 0;
     }
   
