@@ -263,7 +263,7 @@ input {
     .card .image img,
     .card .image video {
       width: 100%;
-      margin-top: 0;
+      /* margin-top: 0; */
     }
   
     .infos .name {
