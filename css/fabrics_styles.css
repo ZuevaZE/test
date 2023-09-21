@@ -95,9 +95,8 @@ input {
 
     border-radius: 5px;
     box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
-    margin-top: -23;
-    width: 86%;
-    height: 600px;
+    width: 315px;
+    height: 560px;
     object-fit: cover;
 }
 
@@ -278,17 +277,15 @@ input {
     .card .image img,
     .card .image video {
       width: 100%;
-      /* margin-top: 0; */
     }
   
     .infos .name {
       padding-left: 0;
     }
 
-    .card .image img,
     .card .image iframe {
       width: 100%;
-      /* margin-top: 0; */
+      height: 100%;
     }
   }
   
