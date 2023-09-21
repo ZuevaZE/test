@@ -91,6 +91,17 @@ input {
     object-fit: cover;
 }
 
+.card .image iframe{
+
+    border-radius: 5px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+    margin-top: -23;
+    width: 86%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
 .card .image .dots{
 
     text-align: center;
@@ -259,6 +270,10 @@ input {
     .card .image video {
       height: 100%;
     }
+
+    .card .image iframe {
+        height: 100%;
+      }
   
     .card .image img,
     .card .image video {
@@ -268,6 +283,12 @@ input {
   
     .infos .name {
       padding-left: 0;
+    }
+
+    .card .image img,
+    .card .image iframe {
+      width: 100%;
+      /* margin-top: 0; */
     }
   }
   
