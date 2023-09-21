@@ -62,18 +62,26 @@ input {
 /* Стили для экранов шириной 600px и меньше (мобильные устройства) */
 @media screen and (max-width: 600px) {
   .container {
-    margin-top: 5px;
+    position: center;
   }
 
   .cards {
-    width: 50%;
+    position: center;
+    width: 100%;
+  }
+
+  .cards label {
+    position: center;
+    width: 100%;
   }
 
   .card {
-    width: 40%;
+    position: center;
+    width: 100%;
   }
 
   .inframe {
+    position: center;
     object-fit: cover;
   }
 
