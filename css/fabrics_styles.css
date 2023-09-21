@@ -253,16 +253,16 @@ input {
     }
   
     .cards label {
-      width: 100%;
+      width: 60%;
     }
   
     .card .image video {
-      height: auto;
+      height: 80%;
     }
   
     .card .image img,
     .card .image video {
-      width: 100%;
+      width: 80%;
       margin-top: 0;
     }
   
