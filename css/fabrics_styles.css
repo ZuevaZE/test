@@ -32,7 +32,6 @@ input {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: +11%;
 }
 
 .cards {
@@ -71,16 +70,6 @@ input {
     justify-content: center;
 }
 
-/* .card .image img{
-
-    border-radius: 5px;
-    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
-    margin-top: 23px;
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-} */
-
 /* .card .image video{
 
     border-radius: 5px;
@@ -99,37 +88,6 @@ input {
     height: 560px;
     object-fit: cover;
     position: relative;
-}
-
-
-
-.card .infos{
-
-    display: block;
-    text-align: end;
-    padding-top: 60px;
-}
-
-.infos span{
-
-    display: block;
-}
-
-.infos .name{
-
-    font-size: 30px;
-    color: var(--current-color1);
-    letter-spacing: 8px;
-    margin-bottom: 20px;
-    padding-left: 25%;
-    transition: all .6s ease;
-}
-
-.infos .lorem{
-
-    font-size: 15.5px;
-    color: #ECEAED;
-    letter-spacing: 3px;
 }
 
 .card .btn-contact {
