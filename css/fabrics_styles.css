@@ -11,6 +11,11 @@ body {
     font-family: 'Urbanist', sans-serif;
 }
 
+a{
+
+    text-decoration: none;
+}
+
 input {
 
     display: none;
@@ -18,40 +23,77 @@ input {
 
 .container {
 
-    max-width: auto;
-    max-height: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    display: flex;
+    transform-style: preserve-3d;
     justify-content: center;
     align-items: center;
-    padding: auto;
-
-
+    flex-direction: column;
+    margin-bottom: +11%;
 }
 
 .cards {
 
-    position: center;
-    height: 560px;
-    width: 320px;
-    padding: 30px 35px;  
+    position: relative;
+    height: 500px;
+    width: 430px;
+    margin-bottom: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
 
 .cards label {
- padding: 30px 35px;
+
+    position: absolute;
+    width: 430px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
 }
 
 .cards .card{
 
-    position:center;
-    height: 560px;
-    width: 320px;
+    position:relative;
+    height: 100%;
     background-color: #323444;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 30px 35px;
 }
 
+.card .image{
+
+    display: flex;
+    justify-content: center;
+}
+
+/* .card .image img{
+
+    border-radius: 5px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+    margin-top: 23px;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+} */
+
+/* .card .image video{
+
+    border-radius: 5px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+    margin-top: -23;
+    width: 86%;
+    height: 600px;
+    object-fit: cover;
+} */
+
 .card .image iframe{
 
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
     width: 315px;
     height: 560px;
@@ -59,56 +101,133 @@ input {
 }
 
 
+.card .image .dots{
+
+    text-align: center;
+}
+
+.dots div{
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.dots div:nth-child(1){
+
+    background-color: var(--current-color1);
+}
+
+.dots div:nth-child(2){
+
+    background-color: #5B85F9;
+}
+
+.dots div:nth-child(3){
+
+    background-color: #000;
+}
+
+
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide1,
+#s4:checked~.cards #slide2,
+#s5:checked~.cards #slide3 {
+
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-70%, 0, -220px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide3,
+#s5:checked~.cards #slide4 {
+
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(-35%, 0, -120px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4,
+#s5:checked~.cards #slide5 {
+
+    box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
+    transform: translate3d(0, 0, 0);
+    --current-color1: #fad00c;
+    --current-color2: #ECEAED;
+}
+
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide5,
+#s5:checked~.cards #slide1 {
+
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(35%, 0, -120px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide4,
+#s3:checked~.cards #slide5,
+#s4:checked~.cards #slide1,
+#s5:checked~.cards #slide2 {
+
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
+    transform: translate3d(70%, 0, -220px);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
 /* Стили для экранов шириной 600px и меньше (мобильные устройства) */
 @media screen and (max-width: 600px) {
-  .container {
-    position: center;
-  }
+    .container {
+        max-width: 200px;
+    }
 
-  .cards {
-    position: center;
-    width: 100%;
-  }
+    .cards {
+        width: 100%;
+    }
 
-  .cards label {
-    position: center;
-    width: 100%;
-  }
+    .cards label {
+        width: 100%;
+    }
 
-  .card {
-    position: center;
-    width: 100%;
-  }
-
-  .inframe {
-    position: center;
-    object-fit: cover;
-  }
-
+    .card .image iframe {
+        height: 235px;
+        width: 130px;
+    }
 }
 
 /* Стили для экранов шириной от 601px до 1024px (планшеты) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  .container {
-    max-width: 90%;
-  }
+    .container {
+        max-width: 90%;
+    }
 
-  .cards {
-    width: 80%;
-  }
+    .cards {
+        width: 80%;
+    }
 }
 
 /* Стили для экранов шириной более 1024px (настольные компьютеры) */
 @media screen and (min-width: 1025px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 
-  .cards {
-    width: 70%;
-  }
-
-  .inframe {
-    object-fit: cover;
-  }
+    .cards {
+        width: 70%;
+    }
 }
