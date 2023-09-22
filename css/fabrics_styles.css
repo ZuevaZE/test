@@ -102,33 +102,6 @@ input {
 }
 
 
-.card .image .dots{
-
-    text-align: center;
-}
-
-.dots div{
-
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.dots div:nth-child(1){
-
-    background-color: var(--current-color1);
-}
-
-.dots div:nth-child(2){
-
-    background-color: #5B85F9;
-}
-
-.dots div:nth-child(3){
-
-    background-color: #000;
-}
 
 .card .infos{
 
@@ -159,7 +132,7 @@ input {
     letter-spacing: 3px;
 }
 
-.card .btn-contact{
+.card .btn-contact {
 
     width: 100%;
     height: 60px;
@@ -184,7 +157,7 @@ input {
     padding-top: 20px;
 }
 
-.socials i{
+.socials .i{
 
     font-size: 25px;
     transition: all .7s ease;
@@ -269,6 +242,24 @@ input {
         height: 235px;
         width: 130px;
     }
+
+    .card .btn-contact {
+
+        height: 45px;
+        font-size: 15px;
+        letter-spacing: 3px;
+        font-weight: 500;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .card .btn-contact i {
+
+        font-size: 13px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
 }
 
 /* Стили для экранов шириной от 601px до 1024px (планшеты) */
