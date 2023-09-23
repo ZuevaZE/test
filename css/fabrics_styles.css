@@ -206,6 +206,7 @@ input {
     .card .image iframe {
         height: 235px;
         width: 130px;
+        object-fit: cover;
     }
 
     .card .btn-contact {
@@ -244,6 +245,7 @@ input {
     .card .image iframe {
         height: 300px;
         width: 220px;
+        object-fit: cover;
     }
 
     .card .btn-contact {
