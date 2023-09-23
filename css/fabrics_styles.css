@@ -230,11 +230,38 @@ input {
 /* Стили для экранов шириной от 601px до 1024px (планшеты) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .container {
-        max-width: 80%;
+        max-width: 400px;
     }
 
     .cards {
+        width: 100%;
+    }
+
+    .cards label {
+        width: 100%;
+    }
+
+    .card .image iframe {
+        height: 300px;
+        width: 220px;
+    }
+
+    .card .btn-contact {
+
+        height: 70%;
         width: 70%;
+        font-size: 25px;
+        letter-spacing: 3px;
+        font-weight: 500;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .card .btn-contact i {
+
+        font-size: 23px;
+        margin-left: 6px;
+        margin-right: 6px;
     }
 }
 
@@ -242,9 +269,11 @@ input {
 @media screen and (min-width: 1025px) {
     .container {
         max-width: 80%;
+        max-height: 80%;
     }
 
     .cards {
         width: 70%;
+        height: 70%;
     }
 }
