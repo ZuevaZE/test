@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800&display=swap');
 /* font-family: 'Urbanist', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+
+
 :root {
 
     /* color palette */
@@ -209,6 +213,7 @@ header .item:hover a::after{
 
 .name_photo .name {
 
+    font-family: 'Caveat', cursive;
     position: absolute;
     z-index: 1;
     padding-top: 20px;
