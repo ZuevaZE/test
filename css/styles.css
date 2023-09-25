@@ -207,7 +207,7 @@ header .item:hover a::after{
     .upside .name_photo {
 
         width: 40%;
-        margin-bottom: 0;
+        margin-bottom: 11px;
     }
 }
 
